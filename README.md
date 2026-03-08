@@ -16,6 +16,13 @@ Example: "10110111" this byte contains numbers from 3 to 17 going from right to 
 
 As a limitation, since it scales linearly, it will eventually also encounter the same problem as just storing Bool since it grows much more slowly and even for Int64 it's more efficient just storing the Ints themselves rather than using this method, but potentially for much larger data types, if stored as strings, it will be much more efficient
 
+Here is also a graph looking at 10 million numbers (664579 prime numbers)<br>
+Yellow -> Boolean<br>
+Green -> Int64<br>
+Red -> Int32<br>
+Yellow -> Bitmask<br>
+![Grap](graph.png)
+
 You can use the plot.py script and get_data.exe, and have enough patience to compile the data yourself, to see how it scales
 
 # How to Build
