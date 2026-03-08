@@ -1,0 +1,7 @@
+Generates a data.txt file which contains x/y data for plotting
+Goes from start -> end (incremented by step)
+x1 y1
+x2 y2
+.  .
+.  .
+.  .
