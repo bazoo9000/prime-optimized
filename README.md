@@ -3,7 +3,7 @@ TLDR: An 'optimized' way to store prime numbers using bit masking
 
 # What is and how it came up to be
 This project aims to optimize the way prime numbers are stored, the way I made it is using bitmasking.<br>
-The way it works is similar to storing prime numbers in an array of booleans, where the index is the number and the value at that is index indicates if that number is prime or not (taken from the "Cracking the Coding Interview 189 Programming Questions and Solutions" book) which I find interesting but starts to consume more memory the moment it hits the number 100 and storing just an array of int32 is more efficient.<br>
+The way it works is similar to storing prime numbers in an array of booleans, where the index is the number and the value at that is index indicates if that number is prime or not which I find interesting but starts to consume more memory the moment it hits the number 100 and storing just an array of int32 is more efficient.<br>
 This problem came in my mind while studying bitmasking and it's uses and thought "What if instead of booleans it's stored in bits? since booleans are the size of 1 byte it is more efficent" and so it began the project.<br>
 While implementing I also figured out that this can be further compressed by storing only odd numbers, except of 2 all prime numbers are odd, and starting from 3, which resulted compressing 16 numbers in 1 byte, hardest part was trying to index and get if a number is prime or not.
 
